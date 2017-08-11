@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Не забудьте указать ваши локальные данные для доступа к БД-->
+        <!-- На данный момент стоят мои-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/emp</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">forewa93</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="connection.pool_size">3</property>
+        <property name="hibernate.show_sql">true</property>
+
+
+        <!-- Не забудь внести entity mapping-->
+        <mapping class="hibernate.entity.EmployeeEntity"></mapping>
+
+    </session-factory>
+</hibernate-configuration>

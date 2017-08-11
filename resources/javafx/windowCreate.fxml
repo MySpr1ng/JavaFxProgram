@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.Controller3">
+   <children>
+      <TextField fx:id="txtFieldName" layoutX="230.0" layoutY="38.0" />
+      <Label layoutX="85.0" layoutY="35.0" prefHeight="25.0" prefWidth="121.0" text="Name :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="151.0" prefHeight="25.0" prefWidth="121.0" text="Date :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="192.0" prefHeight="25.0" prefWidth="121.0" text="Role :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="roleSt" layoutX="230.0" layoutY="197.0" prefWidth="150.0" />
+      <Button fx:id="btnSave" layoutX="206.0" layoutY="239.0" mnemonicParsing="false" onAction="#onActionSave" prefHeight="35.0" prefWidth="106.0" text="SAVE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="datePicker" layoutX="230.0" layoutY="156.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="85.0" layoutY="74.0" prefHeight="25.0" prefWidth="121.0" text="Surname :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="114.0" prefHeight="25.0" prefWidth="121.0" text="Age :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFieldSurname" layoutX="230.0" layoutY="79.0" />
+      <TextField fx:id="txtFieldAge" layoutX="230.0" layoutY="119.0" />
+      <Button fx:id="btnCancel" layoutX="327.0" layoutY="239.0" mnemonicParsing="false" onAction="#onActionCancel" prefHeight="35.0" prefWidth="106.0" text="Cancel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.Controller2">
+   <children>
+      <SplitPane prefHeight="400.0" prefWidth="431.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="422.0">
+               <children>
+                  <TableView fx:id="tableView" prefHeight="398.0" prefWidth="429.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="137.0" text="Name" />
+                        <TableColumn fx:id="lastNameColumn" prefWidth="145.0" text="Lastname" />
+                        <TableColumn fx:id="ageColumn" minWidth="0.0" prefWidth="146.0" text="Age" />
+                     </columns></TableView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="btnCreate" layoutX="468.0" layoutY="50.0" mnemonicParsing="false" onAction="#onActionCreate" prefHeight="69.0" prefWidth="110.0" text="Create">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnEdit" layoutX="468.0" layoutY="131.0" mnemonicParsing="false" onAction="#onActionEdit" prefHeight="69.0" prefWidth="110.0" text="Edit">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnGenerateAccount" layoutX="431.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionGenerateAccount" prefHeight="69.0" prefWidth="174.0" text="GenerateAcc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
